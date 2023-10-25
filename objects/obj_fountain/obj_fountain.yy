@@ -4,7 +4,9 @@
   "name": "obj_fountain",
   "eventList": [],
   "managed": true,
-  "overriddenProperties": [],
+  "overriddenProperties": [
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_par_environment","path":"objects/obj_par_environment/obj_par_environment.yy",},"propertyId":{"name":"useSound","path":"objects/obj_par_environment/obj_par_environment.yy",},"value":"snd_fountain",},
+  ],
   "parent": {
     "name": "Environment",
     "path": "folders/Objects/Environment.yy",
