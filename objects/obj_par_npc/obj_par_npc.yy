@@ -29,6 +29,7 @@
   "properties": [
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"loopRange01","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"30","varType":0,},
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"loopRange02","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"240","varType":0,},
+    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"myText","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"\"Why, hello there!\"","varType":2,},
   ],
   "solid": false,
   "spriteId": null,

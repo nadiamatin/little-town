@@ -1,10 +1,19 @@
 /// @description Player Movement
 
 // check keys for movement
-moveRight = keyboard_check(vk_right);
-moveLeft = keyboard_check(vk_left);
-moveUp = keyboard_check(vk_up);
-moveDown = keyboard_check(vk_down);
+if (global.playerControl == true) {
+	moveRight = keyboard_check(vk_right);
+	moveLeft = keyboard_check(vk_left);
+	moveUp = keyboard_check(vk_up);
+	moveDown = keyboard_check(vk_down);
+}
+if (global.playerControl == false) {
+	moveRight = 0;
+	moveLeft = 0;
+	moveUp = 0;
+	moveDown = 0;
+}
+
 
 // calculate movement
 vx = ((moveRight - moveLeft) * walkSpeed);
@@ -65,7 +74,10 @@ if (nearbyNPC) {
 		audio_play_sound(snd_greeting01, 1, 0);
 		hasGreeted = true;
 	}
-	
+	// pop up prompt
+	if (npcPrompt == noone || npcPrompt == undefined) {
+		npcPrompt = scr_showPrompt(nearbyNPC,nearbyNPC.x, nearbyNPC.y - 450);
+	}
 	show_debug_message("obj_player has found an NPC!");
 	
 }
@@ -74,6 +86,8 @@ if (!nearbyNPC) {
 	if (hasGreeted == true) {
 		hasGreeted = false;	
 	}
+	// get rid of prompt
+	scr_dismissPrompt(npcPrompt, 0);
 	show_debug_message("obj_player has NOT found an NPC!");
 }
 

@@ -7,6 +7,7 @@
   "overriddenProperties": [
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_par_npc","path":"objects/obj_par_npc/obj_par_npc.yy",},"propertyId":{"name":"loopRange01","path":"objects/obj_par_npc/obj_par_npc.yy",},"value":"90",},
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_par_npc","path":"objects/obj_par_npc/obj_par_npc.yy",},"propertyId":{"name":"loopRange02","path":"objects/obj_par_npc/obj_par_npc.yy",},"value":"420",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_par_npc","path":"objects/obj_par_npc/obj_par_npc.yy",},"propertyId":{"name":"myText","path":"objects/obj_par_npc/obj_par_npc.yy",},"value":"\"I'm the teacher! What are you doing out of class?!\"",},
   ],
   "parent": {
     "name": "NPCs",
